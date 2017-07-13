@@ -1,0 +1,40 @@
+{
+  "name": "@tiaanduplessis/throttlify",
+  "version": "1.0.0",
+  "description": "Little throttle function",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tiaanduplessis/throttlify",
+    "type": "git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/throttlify",
+  "bugs": "https://github.com/tiaanduplessis/throttlify",
+  "main": "dist/throttlify.js",
+  "browser": "dist/throttlify.js",
+  "jsnext:main": "dist/throttlify.es.js",
+  "files": ["dist"],
+  "scripts": {
+    "test": "jest",
+    "test:cov": "npm test -- --coverage",
+    "lint": "standard 'src/**/*.js'",
+    "lint:fix": "npm run lint -- --fix",
+    "build": "bili --format es --format umd --compress",
+    "start": "npm run test",
+    "pretest": "npm run format && npm run lint:fix",
+    "format": "prettier --print-width 100 --semi false --single-quote --write 'src/**/*.js'",
+    "precommit": "npm test",
+    "prepublish": "npm run build"
+  },
+  "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
+  "babel": {
+    "presets": [["env"]]
+  },
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "standard": "^10.0.2",
+    "babel-preset-env": "^1.6.0",
+    "bili": "^0.17.3",
+    "husky": "^0.14.3",
+    "prettier": "~1.5.2"
+  }
+}
