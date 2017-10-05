@@ -58,6 +58,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/throttlify.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install @tiaanduplessis/throttlify
 # OR
