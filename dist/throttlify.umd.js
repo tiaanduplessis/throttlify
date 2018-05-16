@@ -1,0 +1,2 @@
+!(function (t, o) { typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = o() : typeof define === 'function' && define.amd ? define(o) : t.throttlify = o() }(this, function () { return function (t, o) { if (void 0 === o && (o = 250), typeof t !== 'function') throw new Error('function must be provided for trottle'); var e = !1; return function () { for (var n = [], f = arguments.length; f--;)n[f] = arguments[f]; e || (t.apply(void 0, n), e = !0, setTimeout(function () { e = !1 }, o)) } } }))
+// # sourceMappingURL=throttlify.umd.js.map
