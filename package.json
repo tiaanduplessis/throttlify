@@ -1,6 +1,6 @@
 {
   "name": "@tiaanduplessis/throttlify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Little throttle function",
   "license": "MIT",
   "repository": {
@@ -40,6 +40,8 @@
     "env": {
       "jest": true
     },
-    "ignore": ["dist"]
+    "ignore": [
+      "dist"
+    ]
   }
 }
